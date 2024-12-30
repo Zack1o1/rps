@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="./src/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1 class="heading">Welcome to the Game</h1>
+        <div class="players_container">
+                <h2 class="user">Player: <span class="score">0</span></h2>
+                <h2 class="computer"> <span class="score">0</span><span>:&nbsp;</span>Computer</h2>
+        </div>
+        <div class="message_container">
+            <p class="message_beats"></p>
+            <p class="message_winner"></p>
+        </div>
+        <div class="controls_container">
+            <div class="choice_container show">
+                <button title="rock" class="btn rock" value="rock">Rock</button>
+                <button title="paper" class="btn paper" value="paper">Paper</button>
+                <button title="scissors" class="btn scissors" value="scissors">Scissors</button>
+            </div>
+            <div class="play_again_conatiner hide">
+                <button class="btn play_again">Play Again</button>
+            </div>
+        </div>
+        <p class="play_music" title="play music">PLAY</p>
+    </div>
+    <audio src="./src/asset/music_rps.mp3" loop></audio>
+    <script src="./src/index.js"></script>
+</body>
+</html>

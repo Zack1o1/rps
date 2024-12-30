@@ -1,0 +1,17 @@
+{
+  "name": "rock-paper-scissors",
+  "version": "1.0.0",
+  "description": "it is a game where player chooses three options rock paper or scissors and computer chooses randomly",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "game",
+    "js",
+    "html",
+    "css"
+  ],
+  "author": "Lalit Rajbanshi",
+  "license": "ISC"
+}
