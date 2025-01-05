@@ -51,7 +51,11 @@ class Style{
     }
 }
 
-UpdateText.winnerMessage("Choose ⬇")
+const defaultHome = ()=>{
+    UpdateText.winnerMessage("Choose ⬇")
+    Style.addClass(messageWinnerText,"updown-animation")
+}
+defaultHome()
 
 playMusic.addEventListener('click', ()=>{
     if(!music_playing){
@@ -121,6 +125,7 @@ const checkGrandWinner = ()=>{
 const playAgain = ()=>{
     computerScore = 0;
     playerScore = 0;
+    defaultHome();
     UpdateText.playerScore(playerScore);
     UpdateText.computerScore(computerScore);
     UpdateText.beatsMessage("")
@@ -133,6 +138,7 @@ const playAgain = ()=>{
 
 playerChoiceBtns.forEach(btn =>{
     btn.addEventListener('click', ()=>{
+        Style.removeClass(messageWinnerText,"updown-animation")
         checkWinner(btn.value,generateComputerChoice())
         Style.addClass(btn,'click-animation')
         Style.addClass(messageWinnerText,'click-animation')

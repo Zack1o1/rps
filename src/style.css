@@ -141,6 +141,7 @@ body {
 
 }
 
+
 @keyframes click-animate {
 
     0%,
@@ -150,6 +151,21 @@ body {
 
     50% {
         transform: scale(.9);
+    }
+}
+
+.updown-animation {
+    animation: linear 1s updown infinite;
+    transition: transform 1s ease-in-out;
+
+}
+
+@keyframes updown {
+    0%,100%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-24px);
     }
 }
 
